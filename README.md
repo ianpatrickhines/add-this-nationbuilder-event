@@ -1,5 +1,3 @@
-#NationBuilder Foundation Theme
-
 # Add This (NationBuilder) Event
 
 **Add This (NationBuilder) Event** is a simple plugin for using the popular [Add This Event][ate] plugin on your [NationBuilder][nationbuilder] event pages. It will allow your supporters to add your events to their preferred calendars from your NationBuilder event pages with a single click.

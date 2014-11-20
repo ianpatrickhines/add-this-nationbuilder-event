@@ -15,5 +15,10 @@ To use this plugin:
 3. Add `{% include "partial_add_this_event_link" %}` to your `pages_show_event.html` and `pages_show_event_wide.html` templates where you’d like the “Add to Calendar” link to appear.
 4. (Optional) Import the `_add_this_event.scss` file into your `theme.scss` stylesheet in order to customize the styling of the widget as desired.
 
+###Notes
+
+- For extended documentation on how to customize the plugin, see [addthisevent.com][ate]
+- The calendar events default to Eastern Time, but can be configured for any time zone. You’ll need to edit the [`_partial_add_this_event.html`](_partial_add_this_event.html) template accordingly.
+
 [ate]: http://addthisevent.com/
 [nationbuilder]: http://nationbuilder.com/?recruiter_id=219736

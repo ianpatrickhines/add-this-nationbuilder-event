@@ -1,0 +1,19 @@
+<a href="{{ page.url }}" title="Add to Calendar" class="addthisevent">
+Add to Calendar
+  <span class="_start">{{ page.event.local_start_at | date: '%-d-%m-%Y %H:%M:%S' }}</span>
+  <span class="_end">{{ page.event.local_end_at | date: '%-d-%m-%Y %H:%M:%S' }}</span>
+  <span class="_zonecode">15</span>
+  <span class="_summary">{{ page.name }}</span>
+  <span class="_description">{{ page.event.content | strip_html | truncatewords: 30 }}</span>
+  {% if page.event.is_location? %}
+      <span class="_location">{{ page.event.venue_address.one_line }}</span>
+  {% endif %}
+  {% if page.event.has_contact? %}
+      <span class="_organizer">{{ page.event.contact_name }}</span>
+      <span class="_organizer_email">{{ page.event.contact_email }}</span>
+  {% endif %}
+  {% if page.event.has_facebook? %}
+      <span class="_facebook_event">{{ page.event.facebook_url }}</span>
+  {% endif %}
+  <span class="_date_format">DD/MM/YYYY</span>
+</a>

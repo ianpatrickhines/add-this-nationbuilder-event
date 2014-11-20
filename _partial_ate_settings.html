@@ -1,0 +1,61 @@
+{% if page.type_slug == "event" %}
+  <script type="text/javascript" src="ate.min.js"></script>
+  {% include "partial_ate_settings" %}
+    <!-- AddThisEvent Settings -->
+    <script type="text/javascript">
+    addthisevent.settings({
+        license   : "aao8iuet5zp9iqw5sm9z",
+        mouse     : false,
+        css       : true,
+        outlook   : {show:true, text:"Outlook Calendar"},
+        google    : {show:true, text:"Google Calendar"},
+        yahoo     : {show:true, text:"Yahoo Calendar"},
+        hotmail   : {show:true, text:"Hotmail Calendar"},
+        ical      : {show:true, text:"iCal Calendar"},
+        facebook  : {show:true, text:"Facebook Event"},
+        dropdown  : {order:"outlook,google,ical"},
+        callback  : ""
+    });
+    </script>
+
+    {% comment %}
+
+    license
+    Type: string - please buy a license in order to hide the credits.
+
+    mouse
+    Type: boolean - show drop down on mouse over?
+    Default behaviour is false.
+
+    css
+    Type: boolean - apply default button css?
+    If value is false the script will not output any CSS.
+    Enables you to restyle the button css.
+
+    outlook
+    Type: boolean, string - show in drop down menu. Text in drop down menu
+
+    google
+    Type: boolean, string - show in drop down menu. Text in drop down menu
+
+    yahoo
+    Type: boolean, string - show in drop down menu. Text in drop down menu
+
+    hotmail
+    Type: boolean, string - show in drop down menu. Text in drop down menu
+
+    ical
+    Type: boolean, string - show in drop down menu. Text in drop down menu
+
+    facebook
+    Type: boolean, string - show in drop down menu. Text in drop down menu
+
+    dropdown
+    Type: string - (optional). Drop down sortorder. Restricts calendar options.
+
+    callback
+    Type: string - call one or multiple custom functions after the button is clicked.
+    How to add one or multiple callback functions
+
+    {% endcomment %}
+{% endif %}

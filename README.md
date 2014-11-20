@@ -18,7 +18,7 @@ To use this plugin:
 ###Notes
 
 - For extended documentation on how to customize the plugin, see [addthisevent.com][ate]
-- The calendar events default to Eastern Time, but can be configured for any time zone. You’ll need to edit the [`_partial_add_this_event.html`](_partial_add_this_event.html) template accordingly.
+- The calendar events default to Eastern Time, but can be configured for any time zone. You’ll need to edit the [`_partial_add_this_event_link.html`](_partial_add_this_event_link.html) template accordingly.
 
 [ate]: http://addthisevent.com/
 [nationbuilder]: http://nationbuilder.com/?recruiter_id=219736
